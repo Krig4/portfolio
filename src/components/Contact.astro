@@ -1,0 +1,49 @@
+---
+// @ts-ignore
+import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+---
+
+<section id="contact" class="section">
+  <h2>Contacto</h2>
+  <p>¿Quieres trabajar conmigo o tienes alguna pregunta? Escríbeme:</p>
+
+  <div class="contact-info">
+    <!-- <p><AiOutlineMail /> <a href="mailto:albertoguerra.dev@gmail.com">albertoguerra.dev@gmail.com</a></p> -->
+    <p><AiFillLinkedin /> <a href="https://www.linkedin.com/in/albertogmartin/" target="_blank">LinkedIn</a></p>
+    <p><AiFillGithub /> <a href="https://github.com/Krig4" target="_blank">GitHub</a></p>
+  </div>
+</section>
+  
+ <style>
+  .section {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .contact-info p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-info .icon {
+    margin-right: 0.5rem;  
+    font-size: 1.5rem;  
+    color: var(--color-accent);  
+  }
+
+  a {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+  

@@ -1,11 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import AboutMe from '@/components/AboutMe.astro';
+import Project from '@/components/Project.astro';
+import Skills from '@/components/Skills.astro';
+import Contact from '@/components/Contact.astro';
+import Footer from '@/components/Footer.astro';
+import Layout from '@/layouts/Layout.astro';
+import Hero from '@/components/Hero.astro';
 import Analytics from '@vercel/analytics/astro'
 
 import "../styles/global.css";
 ---
-<h1 class="text-4xl font-bold text-center text-blue-500">
-  Hello world!
+<Layout>
+  <Hero />
+  <AboutMe />
+  <Project />
+  <Skills />
+  <Contact />
+  <Footer />
   <Analytics />
-</h1>
+</Layout>
