@@ -44,23 +44,29 @@ section {
 
 /* NAVBAR */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: var(--color-primary);
   border-bottom: 1px solid #334155;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  z-index: 1000;
+  flex-wrap: wrap; /* Para que el nav baje en móvil si hace falta */
 }
 
 .navbar .logo {
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--color-accent);
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  cursor: pointer;
 }
 
 .navbar nav {
@@ -71,31 +77,50 @@ section {
 .navbar a {
   padding: 0.25rem 0;
   transition: all 0.2s ease;
+  color: var(--color-accent);
 }
 
 .navbar a:hover {
   color: var(--color-text);
 }
 
-main {
-  padding-top: 80px;
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
 
   .navbar nav {
+    display: none;
     flex-direction: column;
-    margin-top: 0.5rem;
+    width: 100%;
+    background-color: var(--color-primary);
+    margin-top: 1rem;
+  }
+
+  .navbar nav.show {
+    display: flex;
   }
 
   .navbar nav a {
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
   }
 }
+
+/* Forzar estilo de escritorio */
+@media (min-width: 769px) {
+  .navbar nav {
+    display: flex !important;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+
 
 /* HERO SECTION */
 .hero {

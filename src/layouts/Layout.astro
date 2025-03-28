@@ -13,7 +13,8 @@ const { title = "Alberto Guerra | Desarrollador Web" } = Astro.props;
   <body>
     <header class="navbar">
       <div class="logo">Alberto Guerra</div>
-      <nav>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav id="mobileMenu">
         <a href="#hero">Inicio</a>
         <a href="#about">Sobre mí</a>
         <a href="#projects">Proyectos</a>
@@ -25,5 +26,15 @@ const { title = "Alberto Guerra | Desarrollador Web" } = Astro.props;
     <main>
       <slot />
     </main>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.getElementById('menuToggle');
+        const nav = document.getElementById('mobileMenu');
+    
+        toggleButton?.addEventListener('click', () => {
+          nav?.classList.toggle('show');
+        });
+      });
+    </script>    
   </body>
 </html>
