@@ -2,6 +2,7 @@
 import '@/styles/global.css';
 const { title = "Alberto Guerra | Desarrollador Web" } = Astro.props;
 ---
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -11,9 +12,11 @@ const { title = "Alberto Guerra | Desarrollador Web" } = Astro.props;
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
   </head>
   <body>
+    <div class="background-container"></div>
+
     <header class="navbar">
       <div class="logo">Alberto Guerra</div>
-      <button class="menu-toggle" id="menuToggle">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
       <nav id="mobileMenu">
         <a href="#hero">Inicio</a>
         <a href="#about">Sobre mí</a>
@@ -26,15 +29,25 @@ const { title = "Alberto Guerra | Desarrollador Web" } = Astro.props;
     <main>
       <slot />
     </main>
+
+
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const toggleButton = document.getElementById('menuToggle');
         const nav = document.getElementById('mobileMenu');
-    
+        
         toggleButton?.addEventListener('click', () => {
           nav?.classList.toggle('show');
         });
+
+        // Cierra el menú al hacer clic en un enlace en móviles
+        const links = nav?.querySelectorAll('a');
+        links?.forEach(link => {
+          link.addEventListener('click', () => {
+            nav?.classList.remove('show');
+          });
+        });
       });
-    </script>    
+    </script>
   </body>
 </html>
