@@ -1,23 +1,75 @@
+---
+import { AiFillGithub } from 'react-icons/ai';
+---
+<head>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Evento click para A&A Burger
+      const githubIcon1 = document.getElementById('github-icon-1');
+      if (githubIcon1) {
+        githubIcon1.addEventListener('click', () => {
+          window.open("https://github.com/AlbertoCalzada/AABurger", "_blank");
+        });
+      }
+
+      // Evento click para Pawify
+      const githubIcon2 = document.getElementById('github-icon-2');
+      if (githubIcon2) {
+        githubIcon2.addEventListener('click', () => {
+          window.open("https://github.com/Pawify", "_blank");
+        });
+      }
+
+      // Evento click para Krig Burger
+      const githubIcon3 = document.getElementById('github-icon-3');
+      if (githubIcon3) {
+        githubIcon3.addEventListener('click', () => {
+          window.open("https://github.com/Krig4/krigburger", "_blank");
+        });
+      }
+    });
+  </script>
+</head>
+
 <section id="projects" class="section">
-    <h2>Proyectos</h2>
-    <p>Aquí puedes ver algunos de los proyectos que he desarrollado recientemente:</p>
-  
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Portfolio Web</h3>
-        <p>Portfolio moderno hecho con Astro y desplegado en Vercel.</p>
-        <a href="https://albertoguerra.vercel.app/" target="_blank">Ver proyecto</a>
-      </div>
+  <h2>Proyectos</h2>
+  <p>Aquí puedes ver algunos de los proyectos que he desarrollado recientemente:</p>
+
+  <div class="projects-grid">
     <div class="project-card">
-        <h3>A&A Burger</h3>
-        <p>Web para la gestión de un restaurante, tanto carta como pedidos online y reservas</p>
-        <a href="  https://aa-burger.vercel.app/" target="_blank">Ver proyecto</a>
-    </div>
-      <div class="project-card">
-        <h3>Krig Burger</h3>
-        <p>Web para eventos de hamburguesas con estética personalizada.</p>
-        <a href="https://github.com/Krig4" target="_blank">Ver repositorio</a>
+      <div class="card-img">
+        <img src="/img/Restaurante.jpg" alt="Foto de A&A Burger" class="card-image" />
       </div>
+      <h3>A&A Burger</h3>
+      <p>Web para la gestión de un restaurante, tanto carta como pedidos online y reservas</p>
+      <div class="github-container">
+        <AiFillGithub id="github-icon-1" className="github-icon" />
+      </div>
+      <a href="https://aa-burger.vercel.app/" target="_blank" class="btn-project">Visitar</a>
     </div>
-  </section>
-  
+
+    <div class="project-card">
+      <div class="card-img">
+        <img src="/img/pawify.png" alt="Foto de Pawify" class="card-image" />
+      </div>
+      <h3>Pawify</h3>
+      <p>Desarrollo de web para adopción de animales. Estamos creando de 0 el proyecto para poder mejorar la escalabilidad.</p>
+      <div class="github-container">
+        <AiFillGithub id="github-icon-2" className="github-icon" />
+      </div>
+      <a href="https://pawify.org/" target="_blank" class="btn-project">Visitar</a>
+    </div>
+
+    <div class="project-card">
+      <div class="card-img">
+        <img src="/img/KrigBurgerLogo.jpg" alt="Foto de Krig Burger" class="card-image" />
+      </div>
+      <h3>Krig Burger</h3>
+      <p>Web para una empresa de eventos de hamburguesas con estética personalizada. (En construcción)</p>
+      <div class="github-container">
+        <AiFillGithub id="github-icon-3" className="github-icon" />
+      </div>
+      <a href="https://github.com/Krig4/krigburger" target="_blank" class="btn-project">Visitar</a>
+    </div>
+  </div>
+</section>
