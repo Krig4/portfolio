@@ -39,6 +39,10 @@ Este es mi portfolio personal como desarrollador web, creado con [Astro](https:/
 
 ---
 
+**Gracias por visitar mi portfolio. ¡Cualquier feedback o estrella ⭐️ en el repo es más que bienvenida!**
+
+---
+
 ## 🚀 Instalación y desarrollo local
 
 ```bash
@@ -53,5 +57,4 @@ npm install
 npm run dev
 
 
-Gracias por visitar mi portfolio. ¡Cualquier feedback o estrella ⭐️ en el repo es más que bienvenida!
 
