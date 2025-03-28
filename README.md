@@ -1,48 +1,57 @@
-# Astro Starter Kit: Basics
+# 🌐 Portfolio Web - Alberto Guerra
 
-```sh
-npm create astro@latest -- --template basics
-```
+[Vista previa del sitio](./src/assets/capturaReadMe.PNG)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este es mi portfolio personal como desarrollador web, creado con [Astro](https://astro.build/) y desplegado en [Vercel](https://vercel.com/). El objetivo de este proyecto es mostrar mis habilidades, proyectos y experiencia de forma profesional y moderna.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+🔗 **Demo en producción:**  
+👉 [https://albertoguerra.vercel.app](https://albertoguerra.vercel.app)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+---
 
-## 🚀 Project Structure
+## ✨ Características
 
-Inside of your Astro project, you'll see the following folders and files:
+- Sitio estático moderno y rápido construido con **Astro**
+- Estilo limpio y profesional con **CSS custom properties** y diseño responsive
+- Navegación fluida entre secciones
+- Secciones:
+  - **Inicio** (Hero)
+  - **Sobre mí**
+  - **Proyectos**
+  - **Habilidades**
+  - **Contacto**
+- Íconos interactivos con `react-icons`
+- Animaciones de entrada suaves con CSS
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 📁 Estructura del proyecto
+📦 src ┣ 📂components ┃ ┣ 📜AboutMe.astro ┃ ┣ 📜Contact.astro ┃ ┣ 📜Footer.astro ┃ ┣ 📜Hero.astro ┃ ┣ 📜Navbar.astro ┃ ┣ 📜Project.astro ┃ ┗ 📜Skills.astro ┣ 📂layouts ┃ ┗ 📜Layout.astro ┣ 📂pages ┃ ┗ 📜index.astro ┗ 📂styles ┗ 📜global.css
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 🛠️ Tecnologías utilizadas
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- [Astro](https://astro.build/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [CSS Variables](https://developer.mozilla.org/es/docs/Web/CSS/--*)
+- [Vercel](https://vercel.com/) para el despliegue
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🚀 Instalación y desarrollo local
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/Krig4/portfolio.git
+cd portfolio
+
+# Instalar dependencias
+npm install
+
+# Iniciar entorno de desarrollo
+npm run dev
+
+
+Gracias por visitar mi portfolio. ¡Cualquier feedback o estrella ⭐️ en el repo es más que bienvenida!
+
