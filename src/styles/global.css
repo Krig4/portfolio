@@ -331,11 +331,17 @@ h3 {
 
 
 /* SKILLS SECTION */
-.skills {
+#skills {
   padding: 4rem 2rem;
-  max-width: 800px;
+  max-width: 900px; /* Aumenté el ancho máximo */
   margin: auto;
   text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem; /* Añadí espacio entre el título y las habilidades */
 }
 
 .skills-list {
@@ -344,17 +350,36 @@ h3 {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem; /* Aumenté el espacio entre los elementos */
   justify-content: center;
 }
 
 .skills-list li {
   background-color: var(--color-primary);
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
+  padding: 1rem 1.5rem; /* Aumenté el padding para mayor espacio */
+  border-radius: 12px; /* Bordes más redondeados */
   color: var(--color-subtle);
   font-weight: 500;
+  font-size: 1.1rem; /* Aumento de tamaño de fuente para mejorar la legibilidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para un efecto moderno */
 }
+
+.skills-list li:hover {
+  transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba al pasar el ratón */
+  box-shadow: 0 0 10px 4px rgba(56, 189, 248, 0.7); /* Efecto de borde neón azul */
+}
+
+.skills-list li:active {
+  transform: translateY(2px); /* Efecto de presión al hacer clic */
+}
+
+@media (max-width: 768px) {
+  .skills-list li {
+    font-size: 1rem; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+  }
+}
+
+
 
 /* CONTACT SECTION */
 ul {
