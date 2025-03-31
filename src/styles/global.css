@@ -512,3 +512,105 @@ ul {
   mask: linear-gradient(#0004, #000);
   opacity: 0.3;
 }
+
+/* SOFT SKILLS SECTION */
+#soft-skills {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+#soft-skills h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+
+.soft-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.soft-skills-list li {
+  background-color: var(--color-primary);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: var(--color-subtle);
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-skills-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px 4px rgba(56, 189, 248, 0.7);
+}
+
+/* CERTIFICACIONES SECTION */
+#certificaciones {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+#certificaciones h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+
+/* Lista de certificaciones */
+.certifications-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.certifications-list li {
+  background-color: var(--color-primary);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-text);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certifications-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+/* Estilos para el icono */
+.certifications-list .icon {
+  font-size: 1.8rem;
+}
+
+/* Texto de certificación */
+.certification-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.certification-text strong {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+}
+
+.certification-text .institution {
+  font-size: 1rem;
+  color: var(--color-subtle);
+}
+
