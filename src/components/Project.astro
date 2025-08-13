@@ -1,10 +1,12 @@
 ---
+// Importación del icono de GitHub
 import { AiFillGithub } from 'react-icons/ai';
 ---
+
 <head>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Evento click para A&A Burger
+      // GitHub: A&A Burger
       const githubIcon1 = document.getElementById('github-icon-1');
       if (githubIcon1) {
         githubIcon1.addEventListener('click', () => {
@@ -12,7 +14,7 @@ import { AiFillGithub } from 'react-icons/ai';
         });
       }
 
-      // Evento click para Pawify
+      // GitHub: Pawify
       const githubIcon2 = document.getElementById('github-icon-2');
       if (githubIcon2) {
         githubIcon2.addEventListener('click', () => {
@@ -20,15 +22,111 @@ import { AiFillGithub } from 'react-icons/ai';
         });
       }
 
-      // Evento click para Krig Burger
+      // GitHub: Kasas Cheesecake
       const githubIcon3 = document.getElementById('github-icon-3');
       if (githubIcon3) {
         githubIcon3.addEventListener('click', () => {
-          window.open("https://github.com/Krig4/krigburger", "_blank");
+          window.open("https://github.com/Krig4/kasascheesecake", "_blank");
         });
       }
     });
   </script>
+  <style>
+    .projects-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background-color: #1e293b;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      margin: 1rem;
+      color: #f1f5f9;
+    }
+
+    .project-card p {
+      margin: 0 1rem;
+      color: #94a3b8;
+      flex-grow: 1;
+    }
+
+    .tech-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 0.5rem 1rem;
+    }
+
+    .tech-tags span {
+      background-color: #38bdf8;
+      color: #0f172a;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #1e293b;
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin: 1rem;
+    }
+
+    .btn-icon:hover {
+      background-color: #0f172a;
+    }
+
+    .github-icon-icon {
+      font-size: 1.25rem;
+      vertical-align: middle;
+    }
+
+    .btn-project {
+      background-color: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      margin: 0 1rem 1rem;
+      border-radius: 999px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-project:hover {
+      background-color: #0ea5e9;
+    }
+  </style>
 </head>
 
 <section id="projects" class="section">
@@ -41,10 +139,15 @@ import { AiFillGithub } from 'react-icons/ai';
         <img src="/img/Restaurante.jpg" alt="Foto de A&A Burger" class="card-image" />
       </div>
       <h3>A&A Burger</h3>
-      <p>Web para la gestión de un restaurante, tanto carta como pedidos online y reservas</p>
-      <div class="github-container">
-        <AiFillGithub id="github-icon-1" className="github-icon" />
+      <p>Web para la gestión de un restaurante, tanto carta como pedidos online y reservas.</p>
+      <div class="tech-tags">
+        <span>Next.js</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
       </div>
+      <button id="github-icon-1" class="btn-icon">
+        <AiFillGithub className="github-icon-icon" /> GitHub
+      </button>
       <a href="https://aa-burger.vercel.app/" target="_blank" class="btn-project">Visitar</a>
     </div>
 
@@ -53,23 +156,33 @@ import { AiFillGithub } from 'react-icons/ai';
         <img src="/img/pawify.png" alt="Foto de Pawify" class="card-image" />
       </div>
       <h3>Pawify</h3>
-      <p>Desarrollo de web para adopción de animales. Estamos creando de 0 el proyecto para poder mejorar la escalabilidad.</p>
-      <div class="github-container">
-        <AiFillGithub id="github-icon-2" className="github-icon" />
+      <p>Web para adopción de animales. Proyecto colaborativo desde cero enfocado en escalabilidad.</p>
+      <div class="tech-tags">
+        <span>React</span>
+        <span>Django</span>
+        <span>MySQL</span>
       </div>
+      <button id="github-icon-2" class="btn-icon">
+        <AiFillGithub className="github-icon-icon" /> GitHub
+      </button>
       <a href="https://pawify.org/" target="_blank" class="btn-project">Visitar</a>
     </div>
 
     <div class="project-card">
       <div class="card-img">
-        <img src="/img/KrigBurgerLogo.jpg" alt="Foto de Krig Burger" class="card-image" />
+        <img src="/img/kasas.jpeg" alt="Foto de Kasas Cheesecake" class="card-image" />
       </div>
-      <h3>Krig Burger</h3>
-      <p>Web para una empresa de eventos de hamburguesas con estética personalizada. (En construcción)</p>
-      <div class="github-container">
-        <AiFillGithub id="github-icon-3" className="github-icon" />
+      <h3>Kasas Cheesecake</h3>
+      <p>Web desarrollada para una tienda de tartas con galería, precios, contacto y reseñas.</p>
+      <div class="tech-tags">
+        <span>Next.js</span>
+        <span>Tailwind</span>
+        <span>Google Maps API</span>
       </div>
-      <a href="https://github.com/Krig4/krigburger" target="_blank" class="btn-project">Visitar</a>
+      <button id="github-icon-3" class="btn-icon">
+        <AiFillGithub className="github-icon-icon" /> GitHub
+      </button>
+      <a href="https://www.kasascheesecake.com/" target="_blank" class="btn-project">Visitar</a>
     </div>
   </div>
 </section>
